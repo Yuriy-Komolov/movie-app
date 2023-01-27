@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.sign {
+  &-page {
+    height: 100vh;
+    margin: auto;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+    padding-top: 120px;
+
+    @include onTablet {
+      padding-top: unset;
+    }
+  }
+
+  &__logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 120%;
+    color: $primary-blue;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-bottom: 64px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}

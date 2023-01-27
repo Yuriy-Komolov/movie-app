@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+.tab {
+  &__section {
+    background-color: #f2f3f3;
+    color: black;
+    padding: 40px 0;
+  }
+
+  &-header {
+    display: flex;
+    column-gap: 24px;
+
+    margin-bottom: 24px;
+    border-bottom: 1px solid $primary-grey;
+  }
+
+  &-header__item {
+    font-size: 18px;
+    line-height: 120%;
+    color: $primary-blue;
+
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    grid-column: span 4;
+
+    &:hover {
+      border-bottom: 2px solid $primary-blue;
+    }
+  }
+
+  &-header__link {
+    display: flex;
+    padding-bottom: 8px;
+  }
+
+  &-header__item--active {
+    border-bottom: 2px solid $primary-blue;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}

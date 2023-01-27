@@ -1,0 +1,16 @@
+.content-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  &__item {
+    @media (min-width: 1139px) {
+      grid-column: span 6;
+    }
+
+    @media (min-width: 768px) {
+      grid-column: span 4;
+    }
+  }
+}

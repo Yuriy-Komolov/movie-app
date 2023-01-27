@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.button {
+  line-height: 120%;
+  padding: 8px 20px;
+  color: #fff;
+  background-color: transparent;
+  letter-spacing: 1.12px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+
+  transition: all $hover-transition-duration;
+
+  &:hover {
+    border: 1px solid $primary-blue;
+    background-color: $primary-blue;
+  }
+}

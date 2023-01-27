@@ -1,0 +1,23 @@
+.grid {
+  grid-column-gap: 16px;
+  -webkit-column-gap: 16px;
+  column-gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (min-width: 1139px) {
+  .grid {
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(24, 1fr);
+  }
+}
+
+@media (min-width: 639px) {
+  .grid {
+    -webkit-column-gap: 16px;
+    column-gap: 16px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

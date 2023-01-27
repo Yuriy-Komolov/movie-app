@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.result {
+  &__list {
+    position: absolute;
+    width: 350px;
+    top: 36px;
+  }
+
+  &__item {
+    background-color: #fff;
+    padding: 6px;
+
+    @include hover(background-color, $primary-grey);
+  }
+
+  &__title {
+    background-color: $primary-blue;
+    padding: 6px;
+    margin-bottom: 4px;
+  }
+
+  &__subtitle {
+    color: $primary-black;
+    font-size: 11px;
+    line-height: 120%;
+    padding-bottom: 14px;
+  }
+}

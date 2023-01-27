@@ -1,0 +1,116 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  width: 100%;
+
+  position: absolute;
+  top: 0;
+
+  padding: 20px 0;
+  z-index: 5;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+  }
+
+  &__logo {
+    font-size: 24px;
+    line-height: 120%;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+
+    @include onTablet {
+      font-size: 36px;
+      line-height: 120%;
+    }
+  }
+
+  &__logo-span {
+    font-weight: 300;
+    color: $primary-grey;
+  }
+
+  &__controls {
+    display: none;
+
+    @include onTablet {
+      display: flex;
+      align-items: center;
+      column-gap: 12px;
+    }
+
+    position: relative;
+  }
+
+  &__btn {
+    line-height: 120%;
+    padding: 8px 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    letter-spacing: 1.12px;
+    border-radius: 8px;
+    border: none;
+
+    @include hover(background-color, $primary-blue);
+  }
+
+  &__form {
+    height: unset;
+    position: relative;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input-wrapper {
+    position: absolute;
+    left: 8px;
+    top: 5px;
+    z-index: 1;
+    pointer-events: none;
+    width: 12px;
+
+    & img {
+      width: 18px;
+    }
+  }
+
+  &__input {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 34px;
+    transition: 0.3s;
+
+    &:focus {
+      background-color: #fff;
+      outline: none;
+      color: #202020;
+
+      &::placeholder {
+        color: grey;
+      }
+    }
+
+    &::placeholder {
+      color: #fff;
+      opacity: 1;
+      font-size: 13px;
+    }
+  }
+
+  &__burger {
+    @include onTablet {
+      display: none;
+    }
+  }
+}

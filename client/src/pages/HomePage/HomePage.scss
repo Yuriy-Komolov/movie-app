@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.trending {
+  &__section {
+    background-color: #f2f3f3;
+    color: black;
+    padding: 40px 0;
+    min-height: 100vh;
+  }
+}

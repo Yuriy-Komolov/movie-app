@@ -1,0 +1,54 @@
+@import '../../styles/variables.scss';
+
+.burger-menu {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba($color: #f7a277, $alpha: 1);
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  // overflow-y: scroll;
+  // position: fixed;
+
+  // transform: translateX(100%);
+
+  padding: 20px 0;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100%;
+  }
+
+  &__header {
+    display: block;
+    text-align: end;
+
+    margin-bottom: 44px;
+  }
+
+  &__logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 120%;
+    color: $primary-blue;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 32px;
+  }
+
+  &__controls {
+    display: flex;
+    column-gap: 12px;
+
+    margin-bottom: 44px;
+  }
+}
